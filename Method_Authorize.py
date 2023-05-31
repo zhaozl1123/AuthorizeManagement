@@ -230,7 +230,8 @@ def getEnvParams():
     for item in _keys:
         _re = re.compile(rf"{item}: (.*)")
         _res = _re.findall(_info)
-        _values.append(_res[0])
+        if (isinstance(_res, list)) and (len(_res) != 0):
+            _values.append(_res[0])
     return dict(zip([item.replace(" ", "").replace("\\", "").replace("(system)", "") for item in _keys], _values))
 
 
