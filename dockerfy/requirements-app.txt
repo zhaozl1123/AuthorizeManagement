@@ -1,0 +1,6 @@
+flask
+minio
+commonMethods_zhaozl_green
+gunicorn
+requests
+gevent
