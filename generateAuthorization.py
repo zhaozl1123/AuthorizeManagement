@@ -50,10 +50,15 @@ def getInfoByParam():
     :return: str，基础环境信息、核心环境信息或两者
     """
     global AUTH_INFO
+
+    try:
+        _core_env_info = getEnvParams()
+    except:
+        _core_env_info = {}
     _options = {
         "basic_env_info": AUTH_INFO,
-        "core_env_info": getEnvParams(),
-        "all": {**AUTH_INFO, **getEnvParams()},
+        "core_env_info": _core_env_info,
+        "all": {**AUTH_INFO, **_core_env_info},
     }
     return _options[request.args.get("quest")]
 
