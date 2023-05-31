@@ -167,8 +167,8 @@ class ProductAuthorization:
         :arg lengthLimit: int,基本授权信息的字符数量限制，默认1000
         :arg withCoreEnvParams: bool,是否使用硬件信息进行授权，默认True
         """
-        _coreAuthInfo = getEnvParams()
         if withCoreEnvParams:
+            _coreAuthInfo = getEnvParams()
             _combinedAuthInfo = {**basicAuthDict, **_coreAuthInfo}
         else:
             _combinedAuthInfo = basicAuthDict
