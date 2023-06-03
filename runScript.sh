@@ -1,0 +1,1 @@
+streamlit run /workbench/Homepage.py&gunicorn --chdir /workbench generateAuthorization:app -c /workbench/gunicorn.conf.py -t 8300

@@ -1,7 +1,8 @@
 # 主要功能
 
-用于3DS^TM^产品的授权和认证过程的调用：
->> 接口描述详细文档与测试用例见: https://documenter.getpostman.com/view/16609215/2s93mATzCG
+用于3DS ^TM^ 产品的授权和认证过程的调用：
+
+  > 接口描述详细文档与测试用例见: https://documenter.getpostman.com/view/16609215/2s93mATzCG
 
 1. `generateAuthorization.py`将授权过程封装成了具有RestfulAPI接口的服务，使用如下命令进行部署：
 

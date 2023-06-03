@@ -51,14 +51,16 @@ def getInfoByParam():
     """
     global AUTH_INFO
 
+    __coreInfo = {}
     try:
-        _core_env_info = getEnvParams()
+        __coreInfo = getEnvParams()
     except:
-        _core_env_info = {}
+        pass
+
     _options = {
         "basic_env_info": AUTH_INFO,
-        "core_env_info": _core_env_info,
-        "all": {**AUTH_INFO, **_core_env_info},
+        "core_env_info": __coreInfo,
+        "all": {**AUTH_INFO, **__coreInfo},
     }
     return _options[request.args.get("quest")]
 
