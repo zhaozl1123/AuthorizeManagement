@@ -1,6 +1,6 @@
 # 主要功能
 
-用于3DS ^TM^ 产品的授权和认证过程的调用：
+用于3DS <sup>TM</sup> 产品的授权和认证过程的调用：
 
   > 接口描述详细文档与测试用例见: https://documenter.getpostman.com/view/16609215/2s93mATzCG
 
